@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProdutosController;
+use App\Http\Controllers\DepartamentoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +26,5 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Auth::routes();
 
 Route::get('/produtos', [ProdutosController::class, 'index'])->name('produtos');
+
+Route::get('/departamentos', [DepartamentoController::class, 'index'])->name('departamentos');
