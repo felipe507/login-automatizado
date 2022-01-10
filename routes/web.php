@@ -28,3 +28,7 @@ Auth::routes();
 Route::get('/produtos', [ProdutosController::class, 'index'])->name('produtos');
 
 Route::get('/departamentos', [DepartamentoController::class, 'index'])->name('departamentos');
+
+Route::get('/usuarios', function () {
+    return view('usuario');
+});
