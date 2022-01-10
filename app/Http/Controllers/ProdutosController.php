@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 
 class ProdutosController extends Controller
 {
+    public function __construct() {
+        $this->middleware('auth');
+    }
+
     public function index() {
-        echo "<h4>Listagem de produtos</h4";
+        echo "<h4>Listagem de produtos</h4>";
         echo "<ol>";
         echo "<li>Notebook</li>";
         echo "<li>Impressora</li>";
