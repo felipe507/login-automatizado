@@ -24,4 +24,4 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
-Route::get('/produtos', [ProdutosController::class, 'index'])->name('home');
+Route::get('/produtos', [ProdutosController::class, 'index'])->name('produtos');
